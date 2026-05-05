@@ -39,12 +39,12 @@ ActiveRecord::Schema[8.1].define(version: 2026_05_04_143605) do
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
   end
 
-  create_table "postlmages", force: :cascade do |t|
+  create_table "post_images", force: :cascade do |t|
     t.text "caption"
     t.datetime "created_at", null: false
     t.string "shop_name"
     t.datetime "updated_at", null: false
-    t.integer "usee_id"
+    t.integer "user_id"
   end
 
   create_table "sessions", force: :cascade do |t|
